@@ -1,27 +1,71 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
-
-
-.jumbotron {
-    background-color: white;
-    color: black;
-    text-align: left;
-    padding-left: 70px;
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
 }
 
+
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+}
+.jumbotron-billboard .img {
+    margin-bottom: 0px;
+    opacity: 0.4;
+    color: #fff;
+    background: #000 url("https://4.bp.blogspot.com/-rg-WEbYUny8/WV7pQDxerJI/AAAAAAAAIK0/5Udz8UwbbBoeZzjpeYw-zZ6cYd6yf6XyACLcBGAs/s1600/WhatsApp%2BImage%2B2017-07-05%2Bat%2B18.37.27.jpeg") center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    
+  
+  
+  position:absolute;
+  top:0;left:0;
+  z-index:1;
+}
+.jumbotron {
+    position:relative;
+    padding:50px;
+    color: black;
+}
+.jumbotron .container {z-index:2;
+ position:relative;
+  z-index:2;
+}
+.head {
+    font-size: 30px;
+    
+}
+.name {
+    font-family: 'Indie Flower', cursive;
+}
+h2 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+}
+.row.no-gutters {
+   margin-right: 0;
+   margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+   padding-right: 0;
+   padding-left: 0;
+}
 .header {
     text-align: center;
     color: white;
     font-size: 16px;
 }
-.footer {
-    background-color: black;
+.about-me{
+    padding-left: 0;
+    padding-right: 0;
 }
 
-.img-circle {
-    height: 150px;
-    margin-top: 40px;
-    margin-left: -60px;
-}
 .col-md-4 {
     margin-top: 70px;
     margin-left: 45px;
@@ -29,22 +73,13 @@
 .btn-default {
     height: 50px;
     width: 50px;
+    border: transparent;
 }
-.navi {
-    margin-top: -30px;
-    padding-left: 32%;
-    padding-right: 20%;
+.para-me {
+    margin-left: -25px;
 }
-.but {
-    padding: 0 15px 0 15px;
-    font-size: 20px;
-}
-body {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: 0.05em;
+.time {
+    margin-top: -60px;
 }
 
 /* Layout */
@@ -143,4 +178,38 @@ body {
   display: inline-block;
   margin-bottom: 1.2em;
   padding: 0.25em 1em 0.2em 1em;
+}
+
+.img-responsive {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.cntainer:hover .img-responsive {
+  opacity: 0.3;
+}
+
+.cntainer:hover .middle {
+  opacity: 1;
+}
+
+.text {
+background-color: aliceblue
+  color: black;
+  font-size: 25px;
+  padding: 16px 2px;
 }
