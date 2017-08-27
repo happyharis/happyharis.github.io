@@ -15,7 +15,7 @@ body {
     margin-bottom: 0px;
     opacity: 0.4;
     color: #fff;
-    background: #000 url("https://4.bp.blogspot.com/-rg-WEbYUny8/WV7pQDxerJI/AAAAAAAAIK0/5Udz8UwbbBoeZzjpeYw-zZ6cYd6yf6XyACLcBGAs/s1600/WhatsApp%2BImage%2B2017-07-05%2Bat%2B18.37.27.jpeg") center center;
+    background: white;
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -46,15 +46,6 @@ body {
 h2 {
     font-family: 'Indie Flower', cursive;
     font-size: 20px;
-}
-.row.no-gutters {
-   margin-right: 0;
-   margin-left: 0;
-}
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
-   padding-right: 0;
-   padding-left: 0;
 }
 .header {
     text-align: center;
@@ -212,4 +203,7 @@ background-color: aliceblue
   color: black;
   font-size: 25px;
   padding: 16px 2px;
+}
+.im {
+    font-size: 30px;
 }
