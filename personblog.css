@@ -21,6 +21,8 @@ body {
     background-size: cover;
     overflow: hidden;
     
+  
+  
   position:absolute;
   top:0;left:0;
   z-index:1;
@@ -44,6 +46,15 @@ body {
 h2 {
     font-family: 'Indie Flower', cursive;
     font-size: 20px;
+}
+.row.no-gutters {
+   margin-right: 0;
+   margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+   padding-right: 0;
+   padding-left: 0;
 }
 .header {
     text-align: center;
